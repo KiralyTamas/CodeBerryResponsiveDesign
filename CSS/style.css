@@ -1,0 +1,145 @@
+@font-face {
+	font-family: Playfair;
+	src: url(/ResponsiveWebdesigne/Fonts/Playfair.otf);
+}
+@font-face {
+	font-family: Antonio;
+	src: url(/ResponsiveWebdesigne/Fonts/Antonio.ttf);
+}
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: Antonio, Gerdana, Geneva, Tahoma, sans-serif;
+	font-size: 1.125rem;
+	line-height: 2rem;
+	color: #333;
+}
+h1,
+h2 {
+	font-family: Playfair, Arial, Helvetica, sans-serif;
+}
+h1 {
+	font-size: 1.8rem;
+}
+h2 {
+	font-size: 1.6rem;
+	color: #e5127d;
+}
+.fej p {
+	font-size: 1.125rem;
+	letter-spacing: 0.125rem;
+	color: #8c8e9b;
+}
+/*
+.torzs {
+	background-color: rgba(100, 148, 237, 0.3);
+}
+.tartalom {
+	background-color: rgba(184, 135, 11, 0.3);
+}
+.fej {
+	background-color: rgba(210, 105, 30, 0.3);
+}
+*/
+/* ==== LAYOUT STYLES ==== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hgroup,
+ul,
+ol,
+dd,
+p,
+figure,
+pre,
+table,
+fieldset,
+hr,
+.fej,
+.tartalom {
+	margin-bottom: 1rem;
+}
+/* Hrader Styles */
+.fej {
+	text-align: center;
+	padding: 1.25rem;
+	color: #fff;
+	background-color: #42444e;
+}
+@media (min-width: 768px) {
+	.fej {
+		position: fixed;
+		top: 0;
+		height: 100%;
+		width: 33.3%;
+	}
+}
+@media (min-width: 1025px) {
+	.fej {
+		width: 20.625%;
+	}
+}
+/* Article Styles */
+.tartalom {
+	width: 95%;
+	margin: 0 auto 1rem;
+	padding: 0.3125rem;
+}
+.picture {
+	width: 100%;
+}
+/* Törzs Wrapper Styles */
+
+@media (min-width: 768px) {
+	.torzs {
+		float: right;
+		width: 66.6%;
+		max-width: 812px;
+	}
+}
+@media (min-width: 1025px) {
+
+	.torzs {
+		float: none;
+		position: absolute;
+        left: 20.625%;
+	}
+
+}
+/* ==== COMPONENT STYLES ==== */
+
+.button {
+	display: inline-block;
+	border: 1px solid #8c8e9b;
+	color: #8c8e9b;
+	border-radius: 10px;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin: 5px;
+	width: 100px;
+	font-family: "Open Sans", sans-serif;
+}
+
+.button:hover {
+	border: 1px solid #b60e63;
+}
+
+.load {
+	display: block;
+	text-align: center;
+	padding: 0.625rem;
+	font-size: 1.25rem;
+	color: #8c8e9b;
+}
+a {
+	color: #e5127d;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #b60e63;
+}
